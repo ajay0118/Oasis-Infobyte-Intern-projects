@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial,sans-serif;
+    line-height: 1.6;
+    background: #f4f7fc;
+    color: #333;
+}
+
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background: #83b773;
+    color: #333;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+.intro h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+
+}
+
+.section {
+    padding: 40px 20px;
+    min-width: 900px;
+    margin: auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #83b773;
+    font-size: 1.5ren
+}
+.section p {
+    font-weight: bold;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skills-list li {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px #83b773;
+    transition: transform 0.2s;
+}
+.skills-list li:hover {
+    transform: translateY(-3px);
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #83b773;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px #83b773;
+}
+
+.project-card .sno {
+    font-weight: bold;
+    color: #83b773;
+    font-size: 1.2rem;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #83b773;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.edu-list {
+    display: grid;
+    gap: 15px;
+}
+
+.edu-card {
+    background: white;
+    padding: 15px;
+    border-left: 5px solid #83b773;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px  #83b773;
+}
+
+.edu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px #83b773;
+}
+
+.edu-card h3 {
+    margin-bottom: 5px;
+    color: #83b773;
+}
+
+#contact p {
+    text-align: center;
+    margin: 8px 0 ;
+}
+
+.footer {
+    text-align: center;
+    background: #83b773;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+}
