@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FitLife Gym</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Fit<span>Life</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#plans">Plans</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#plans" class="btn btn-primary">Join Now</a>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Transform Your Body, Transform Your Life</h1>
+        <p class="lead">
+          Join FitLife Gym and achieve your fitness goals with expert trainers, 
+          modern equipment, and flexible membership plans.
+        </p>
+        <div class="hero-ctas">
+          <a href="#plans" class="btn btn-primary">View Plans</a>
+          <a href="#about" class="btn btn-outline">Meet the Trainer</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1" alt="Gym workout" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Trainer Intro ===== -->
+  <section id="about" class="section about">
+    <div class="container about-grid">
+      <div>
+        <h2>Meet Your Trainer</h2>
+        <p>
+          Hi, I’m <strong>Alex Johnson</strong>, a certified fitness trainer with over 
+          10 years of experience in strength training, cardio fitness, and nutrition guidance.  
+          My goal is to help you build not just muscles, but a healthy lifestyle.
+        </p>
+        <ul>
+          <li>✅ Certified Personal Trainer</li>
+          <li>✅ 10+ Years Experience</li>
+          <li>✅ Customized Workout Plans</li>
+        </ul>
+      </div>
+      <div class="about-card card">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07b" alt="Trainer Alex" />
+        <h3>Alex Johnson</h3>
+        <p>Head Trainer & Nutrition Expert</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Membership Plans ===== -->
+  <section id="plans" class="section features">
+    <div class="container">
+      <h2 class="section-title">Choose Your Plan</h2>
+      <div class="features-grid">
+        <article class="card">
+          <h3>Basic Plan</h3>
+          <p>Access to gym equipment</p>
+          <p><strong>$20/month</strong></p>
+          <a href="#contact" class="btn btn-outline">Join Now</a>
+        </article>
+
+        <article class="card">
+          <h3>Standard Plan</h3>
+          <p>Gym + 3 Personal Training Sessions</p>
+          <p><strong>$40/month</strong></p>
+          <a href="#contact" class="btn btn-primary">Join Now</a>
+        </article>
+
+        <article class="card">
+          <h3>Premium Plan</h3>
+          <p>Unlimited Training + Nutrition Guidance</p>
+          <p><strong>$60/month</strong></p>
+          <a href="#contact" class="btn btn-outline">Join Now</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Form ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <form class="contact-form" onsubmit="return false;">
+        <label>
+          <span>Name</span>
+          <input type="text" placeholder="Your Name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea rows="4" placeholder="Tell us your fitness goals..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> FitLife Gym. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
